@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eitchang OUEINA Assignment 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!----------------------------Header section of the website------------->
+    <div class="header-section">
+        <nav>
+            <input type="checkbox" id="chk1">
+            <label for="chk1">
+                <div class="menu"></div>
+            </label>
+            <div class="logo">
+                <h1>Flowers4U</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li class="dropdown"><a href="#">Occasions<span>&#1167;</span></a>
+                    <ul class="drop">
+                        <li><a href="birth.html">Birth</a></li>
+                        <li><a href="congratulation.html">Congratulations</a></li>
+                        <li><a href="romance.html">Romance</a></li>
+                        <li><a href="thanks.html">Thanksgiving</a></li>
+                        <li><a href="wedding.html">Weddings</a></li>
+                    </ul>
+                </li>
+                <li><a href="request.html">Flowers request</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="section">
+        <img src="images/00_8.jpg">
+        <!----------------Page title styling--------------------->
+        <div class="page-title">
+            <h1>Home | Flowers request </h1>
+        </div>
+    </div>
+
+    <!----------------------------Content Contact------------->
+    <div class="request-section">
+        <h1>Flowers request form</h1>
+        <h4>For all flowers requests, please fill in the bow form with the details:</h4>
+        <div class="form-container">
+
+            <form class="form_frame" action="mailto:admin@flowers4u.co.zm" method="POST" enctype="multipart/form-data"
+                name="EmailTestForm">
+                <p class="field">
+                    <input type="text" name="fname" id="fname" placeholder="First Name">
+                    <label for="fname">First Name</label>
+                </p>
+
+                <p class="field">
+                    <input type="text" name="lname" id="lname" placeholder="Last Name">
+                    <label for="lname">Last Name</label>
+                </p>
+
+                <p class="field">
+                    <input type="text" name="address" id="address" placeholder="Address">
+                    <label for="address">Address</label>
+                </p>
+
+                <p class="field">
+                    <input type="telphone" name="tel" id="tel" placeholder="Telephone number">
+                    <label for="tel">Telephone number</label>
+                </p>
+
+                <p class="field">
+                    <input type="datetime-local" name="datetime" id="datetime" placeholder="date and time">
+                    <label for="datetime">Date and Time for Delivery</label>
+                </p>
+
+                <p class="flowers">
+                    <select name="flowers">
+                        <option>Choose your flower</option>
+                        <option>Carnation & Snowdrop</option>
+                        <option>Violet & Primrose</option>
+                        <option>Daffodil & Jonquil</option>
+                        <option>Daisy & Sweet Pea</option>
+                        <option>Lily of the Valley & Hawthorn</option>
+                        <option>Rose & Honeysuckle</option>
+                        <option>Larkspur & Water Lily</option>
+                        <option>Aster and Morning Glory</option>
+                        <option>Marigold and cosmos</option>
+                        <option>Chrisanthemum</option>
+                        <option>Narcissus and Holly</option>
+                        <option>Amber Vixen Bouquet</option>
+                        <option>Carring Mother & Fatherp</option>
+                        <option>Happy Bithday Patrick</option>
+                        <option>Ester Happy Birthday</option>
+                        <option>happy birthday masi cake</option>
+                        <option>Bunch of rose flowers</option>
+                        <option>Beautiful Rose Bouquet</option>
+                        <option>Butterflies Pink Bouquet</option>
+                        <option>Happy Birthday wishes Bouquet</option>
+                    </select>
+                <p class="field">
+                    <input type="number" name="Quantity" id="quanity">
+                    <label for="tel">Enter flower Quanity</label>
+                </p>
+                </p>
+
+                <p class="msg">
+                    <textarea name="msg" placeholder="Enter your additional request"></textarea>
+                </p>
+
+                <p class="sub">
+                    <input type="submit" name="sub" value="Send">
+                </p>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!----------------------------footer section of the website------------->
+
+    <footer class="footer">
+        <div class="footer-section">
+            <div class="footer-items">
+                <h1>Flowers4U</h1>
+                <p>
+                    Get regular updates from Flowers4U and hear the latest news from our Team.<br>
+                    all of our customers receive an exceptional service by focusing on your personal needs and by using
+                    our local knowledge
+                    and years of experience.
+                </p>
+            </div>
+
+            <div class="footer-items">
+                <h2>Quick Link</h2>
+                <div class="line-1"></div>
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="About.html">
+                        <li>About</li>
+                    </a>
+                    <a href="request.html">
+                        <li>Flowers request</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                    <a href="birth.html">
+                        <li>Birth gifts</li>
+                    </a>
+                    <a href="congratulation.html">
+                        <li>Congratulations gifts</li>
+                    </a>
+                    <a href="romance.html">
+                        <li>Romance</li>
+                    </a>
+                    <a href="thanks.html">
+                        <li>Thanksgiving bouquets</li>
+                    </a>
+                    <a href="wedding.html">
+                        <li>Weddings Bouquets</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-items">
+                <h2>Important Links</h2>
+                <div class="line-1"></div>
+                <ul>
+                    <a href="termsConditions.html">
+                        <li>Delivery Terms & Conditions</li>
+                    </a>
+                    <a href="">
+                        <li>Security Policy</li>
+                    </a>
+                    <a href="">
+                        <li>Our Services</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="footer-items">
+                <h2>Contact Us</h2>
+                <div class="line-1"></div>
+                <ul>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>22 50, Kab Stree, XYZ, Zambia
+                        Lusaka
+                    </li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>+ 260 78 98 545 20
+                    </li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>Flowers4U.co.zm, admin@flowers4u.co.zm
+                    </li>
+                </ul>
+                <div class="social-media">
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-skype" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="footer-bottom">
+                <h4>Copyright &copy; Zhury home</h4>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

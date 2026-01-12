@@ -1,0 +1,904 @@
+/*****************Whole body stylling set margin 0, padding 0 and font-family: Cormarant Garamond************************/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+    
+}
+
+.logo2{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    justify-content: center;
+   
+}
+
+/*************Set the font-family to Garamound of the whole body text**************/
+body{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/************Styling of image background cover at header section************/
+.section img{
+    min-height: 60vh;
+    width: 100%;
+    background: no-repeat center;
+    background-size: cover;
+}
+
+/*****************Add color to top navigation************************/
+.header-section{
+    min-height: 50px;
+    width: 100%;
+    background: rgb(150, 4, 130);
+    cursor: pointer;
+    position: relative;
+}
+
+.col-head h1, h2, h3{
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+
+.column h4, p{
+    color: black;
+
+}
+
+.price{
+    font-size: 18px;
+    color: black;
+}
+/************Styling of the label at the navigation, width, height and position absolute*************/
+nav label{
+    width:30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+    display: none;
+}
+
+/*****************Menu class Styling at the header section***********************/
+nav label .menu{
+    width:30px;
+    height: 2px;
+    background: whitesmoke;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s linear;
+}
+
+/************Styling of the a pseudo element of the child selected element label*************/
+nav label .menu::before{
+    content: "";
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    bottom: 7px;
+    left:0;
+    background: whitesmoke;
+    transition: 0.5s linear;
+}
+
+/************Hiding the check that should be open and close the nav bar on small screen*************/
+#chk1{
+    display: none;
+}
+
+/************Floating of the logo to left at the header section*************/
+.logo{
+    float: left;
+    line-height: 50px;
+    margin-left: 100px;
+}
+
+.logo h1{
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+
+/******************Navigation Styling*********************/
+nav ul{
+    float: right;
+    margin-right:100px;
+    background: rgb(150, 4, 130);
+}
+
+
+    /*------------------------header section Navigation list items*/
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    line-height: 50px;
+}
+
+  /*****************Add a color background on navigation on hover************/
+nav ul li:hover{
+    background: rgb(99, 4, 86);
+    position: relative;
+}
+
+/******************Styling Link inside the navigation bar*********************/
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: capitalize;
+    padding: 10px 25px;
+}
+
+
+    /*****************Styling the Dropdown content*************************/
+.drop{
+    width: 170px;
+    position: absolute;
+    top: 50px;
+    left:0;
+    display: none;
+    background: rgb(150, 4, 130);
+}
+
+/**********display the dropdown menu when moving the mouse over the button of the dropdown********/
+nav ul li:hover > .drop{
+    display:block;
+}
+
+/********Adding color to background dropdown on hover********/
+.drop li:hover{
+    background:rgb(99, 4, 86);
+    width: 100%
+}
+
+/**********Displaying of horizontal list items*************/
+span{
+    display: inline-block;
+    font-weight: bold;
+    transition: 0.3s linear;
+}
+
+/***********Change color of the dropdown links through hover**************/
+.dropdown:hover > a span,
+.dropdown li:hover > a span{
+    transform: rotate(-180deg);
+}
+
+/************Styling of section properties width, hwight and marging*************/
+section {
+    width:100%;
+    min-height: 60vh;
+    margin-top: 100px;
+}
+
+/************Styling of h3 in the section*************/
+section h3 {
+    color: whitesmoke;
+    margin-top: 100px;
+    margin-left: 50Px;
+    margin-right: 0Px;
+    letter-spacing: 3px;
+    line-height: 2.5;
+}
+
+/************Styling of the paragraph section, sizing and transformation of the letters to uppercase*************/
+Section p {
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+ /**************Centered  text on the image at the heading section******/
+.title-img {
+  position: absolute;
+  top: 25%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+  background: rgb(72, 129, 214);
+  background: rgba(72, 129, 214, 0.5); 
+  border: none;
+  color: #ffffff; 
+  padding: 10px;
+  line-height: 1.6;
+}
+
+.title-img h2{
+   width: 450px;
+   height: 60px;
+   text-align: center;
+   justify-content: center;
+   position: relative;
+}
+/**********************Styling Page Homme (index) Content*******************/
+
+    /**************Content Page Home styling *************/
+
+.content-home{
+    height: auto;
+    margin: 0 auto -80px; 
+    padding: 0 0 80px;
+    overflow: auto;
+}
+
+ /*************************Styling of the cathegories container at the hope page*****************/
+.cat-container{
+    max-width: 1080px;
+    margin: auto;
+    height: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+    }
+
+/***************************Three image containers (use 33.33% for each picture, etc)*******************************/
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: transform 0.5s;
+  line-height: 160%;
+}
+
+/* Clear fload after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/***********Setting image width to 100%*****************/
+.column img{
+    width:100%;
+}
+
+/*************************Styling of the cathegories container at the hope page*****************/
+.cat-container2 {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 45px;
+    padding-right: 45px;
+    cursor: pointer;
+    text-align: center;
+    
+    }
+
+/*************************Styling of column containing the pictures*****************/
+.column-4 {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 2.0em;
+  box-shadow: rgb(26, 25, 25);
+} 
+
+/*************************Styling of paragraph of the column 4 at the heading section*****************/
+.column-4 p {
+    display: block;
+    margin-left: 0;
+    margin-right:0;
+    margin-top: 1em;
+    margin-bottom:1em;
+    font-size: 25px;
+    color:rgb(14, 13, 13);
+    line-height: 1.6;
+}
+
+/***********************Setting parameter of column 2 width, padding left and right including text alignment ceneter***************/
+.column-2 {
+  max-width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+/***************Styling picture background cover at the heading section*********************/
+.column-2 img{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/************Styling of items displayiing the page tittle*****************/
+.section .page-title {
+  position: absolute;
+  top: 55%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  border: none;
+  color: whitesmoke; 
+  padding: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+
+}
+
+/******Text alignment center of h2 at the heading section**********/
+.cat-container .col-head h2{
+    text-align: center;
+}
+
+/***************************************Content Page About us  styling*********/
+
+/***********styling the page about us, definition of the properties: margin, padding and background color*********/
+.about-us{
+    margin-top: 10px;
+    width:100%;
+    border-color: none;
+    height: auto;
+    margin-top: 0px;
+    background-color: white;  
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    cursor: pointer;
+}
+
+/************Styling the line space between the paragraphs to 2.0em********/
+.about-01{
+  background: none;
+  line-height: 1.6;
+} 
+
+/************Styling of paragraphs ********/
+.about-01 p{
+    text-align: justify;
+    display: block;
+    margin-left: 0;
+    margin-right:0;
+    margin-bottom:1em;
+    font-size: 25px;
+    color:rgb(14, 13, 13);
+    
+}
+/************Styling the h3 and set text align to jstify********/
+.about-01 h3{
+    text-align: justify;
+    color:rgb(168, 46, 46);
+    line-height: 2.0em;
+    font-size: 28px;
+}
+/*************Styling h1 and set text align to center*************/
+.about-01 h1{
+    text-align: center;
+    color:rgb(168, 46, 46);
+    line-height: 2.0em;
+    font-size: 35px;
+}
+
+/*************Set properties to control the content to fit in to the defined area************/
+.our-team{
+    padding-top: 80px;
+    color:#444;
+    font-size:22px;
+    width: 1200px;
+    margin: auto;
+    line-height: 30px;
+    text-align: center;
+}
+
+.our-team h1{
+    color: black;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+/******Set properties tof team-container to fit in to the defined area, width, margin, padding and dispaly 
+fexible items, incluing the allocations of the space between and around flexible items************/
+.team-container{
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/******Set members properties margin, padding, max-width and border sizing************/
+.members{
+    margin: 10px;
+    padding: 20px;
+    max-width: 30%;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+/******Set color background change when moving the mouse over the members (hovering)************/
+.members:hover{
+    background: rgb(16, 175, 154);
+}
+
+/******Set members image property: width, height, border color to whitesmoke and border radius to 50%************/
+.members img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+}
+
+
+.name{
+    padding: 22px;
+    color: #1d1717;
+    font-size: 14px;
+ }
+
+
+.occupation{
+    font-style: italic;
+    color: #999;
+}
+
+
+.desc{
+    margin: 12px;
+    text-align: justify;
+    font-weight: lighter;
+    line-height: 25px;
+    color: #4e4e4e;
+}
+
+
+
+
+/***************************Content Page Contact us styling****************************************************/
+
+/*************Styling the the contact section page***************/
+.contact-section{
+    background-color: whitesmoke;
+    padding: 60px 0;
+}
+
+/*************Styling the h1 of the contact section***************/
+.contact-section h1{
+    text-align: center;
+    color:rgb(168, 46, 46);
+    line-height: 2.0em;
+}
+
+/*************Styling the h2 of the contact section***************/
+.contact-section h2{
+    text-align: center;
+    color:rgb(63, 60, 60);
+    line-height: 2.0em;
+} 
+
+/*************Styling the h3 of the contact section***************/
+.contact-section h3{
+    color:rgb(63, 60, 60);
+    line-height: 2.0em;
+} 
+
+/*************Styling contact-box container area width, margin, height and padding***************/
+.contact-box{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+    height: 750px;
+}
+
+/*************Styling contact-box field properties***************/
+.contact-box .field{
+    display: block;
+    width: 500px;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: white;
+    padding: 20px 40px;
+    outline: none;
+    color:rgb(34, 33, 33);
+    transition: 0.5s;
+}
+
+/*************Set focus to select the field with box-shadow and color change at the border***************/
+.contact-box .field:focus{
+     box-shadow: 0 0 10px 4px #b668bd;
+}
+
+/*************Styling textarea field high and width***************/
+textarea.field-text{
+    width: 500px;
+    max-width: 600px;
+    height: 150px;
+    max-height: 200px;
+  
+}
+
+/*************Floating the contact box button to right: Padding: 12px 50px***************/
+.contact-box .contact-box-btn{
+    float: left;
+    border: 0;
+    background:#34495e;
+    color:whitesmoke;
+    padding:12px 50px;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+/*************Styling the hover background color of the button***************/
+.contact-box .contact-box-btn:hover{
+    background:#2980b9;
+}
+
+/***************************Content Page Terms and Conditions us styling****************************************************/
+
+.terms-conditions-section{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 45px;
+    padding-right: 45px;
+    cursor: pointer;
+    
+    }
+
+    /*************Styling the line space between the paragraphs*************/
+.terms-conditions-01{
+  line-height: 2.0em;
+  box-shadow: rgb(26, 25, 25);
+} 
+
+/*************Styling the paragraph and display the items to block*************/
+.terms-conditions-01 p{
+    display: block;
+    margin-left: 0;
+    margin-right:0;
+    margin-top: 1em;
+    margin-bottom:1em;
+    font-size: 22px;
+    color:rgb(14, 13, 13);
+    text-align: justify;
+}
+/*************Styling h1 and set text align to center*************/
+.terms-conditions-section h1{
+    text-align: center;
+    color:rgb(168, 46, 46);
+    line-height: 2.0em;
+    font-size: 35px;
+}
+
+/*************************************Request section content of the website page********************/
+    /***************Styling the request-section the main page*******************/
+.request-section{
+    background-color: white;
+}
+
+.request-section h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: rgb(156, 14, 133);
+}
+
+.request-section h4{
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 25px;
+}
+
+.form-container{
+    height: 750px;
+    border: 1px thin black;
+    max-width: 750px;
+    margin: auto;
+    padding-left: 45px;
+    padding-right: 45px;
+    cursor: pointer;
+    margin-top: 60px;
+    }
+ 
+.field{
+    margin-bottom: 15px;
+}
+.field input{
+    width: 350px;
+    padding: 10px;
+    color: rgb(17, 16, 16);
+    font-size: 15px;
+    box-shadow: 1px 1px 0.5px  rgb(240, 139, 243);
+    border: none;
+    font-size: 20px;
+}
+
+.flowers select{
+    width: 350px;
+    height: 45px;
+    padding: 10px;
+    color: rgb(17, 16, 16);
+    font-size: 15px;
+    box-shadow: 1px 1px 0.5px  rgb(240, 139, 243);
+    border: none;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+textarea{
+    font-size: 20px;
+    color:white;
+    width: 350px;
+    max-width: 400px;
+    height: 100px;
+    max-height: 200px;
+    color: rgb(17, 16, 16);
+    box-shadow: 1px 1px 0.5px rgb(240, 139, 243);
+    border: none;
+}
+
+
+.sub input{
+    width: 100px;
+    height: 40px;
+    background-color: cyan;
+    text-align: center;
+    border:none;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.field label{
+    margin-left: 30px;
+    font-size: 25px;
+}
+
+
+.field input:hover, .flowers input:hover,  .sub input:hover, textarea:hover{
+    box-shadow: 1px 1px 2px cyan;
+    -moz-box-shadow: 1px 1px 2px cyan;
+    -webkit-box-shadow: 1px 1px 2px cyan;
+}
+
+
+
+/*************************************Footer section of the website page********************/
+    /**********************define the width and add background color, and displaying all elements as block********************/
+footer{
+    width: 100%;
+    background: #0a0a0a;
+    display: block;
+    margin-top: 50px;
+    height: 100%;
+}
+
+ /********************Inclusion of box-sizing, width and padding**************************/
+.footter-items{
+    width: 95%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+/********************Setting footer-section properties: width, margin, padding, showing the flexible lenght on the  items **************************/
+.footer-section{
+    width: 95%;
+    margin: auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+
+        /******************Footer properties set***********************/
+.footer-items{
+    width: 25%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+ /*******************Styling text properties  (logo) at footer section***************/
+.footer-items h1{
+    padding: 10px 0;
+    font-size: 25px;
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+   
+}
+
+ /*****************Styling of paragraph under website logo at footer section***********************/
+.footer-items p{
+    color:grey;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+ /***********************Styling of head link properties at footer section*******************************/
+.footer-items h2{
+    padding: 10px 0;
+    font-size: 16px;
+    color: #afaeae;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+/*************Styling horizontal line under the heading items, and set color background of the line (at the footer section)**************/
+.footer-items .line-1 {
+    height: 2.5px;
+    width: 40px;
+    background: #940b5f;
+}
+
+/*************Styling the content of each marker or bullet on the list to none, text color to white, sizing text to 15px at the footer section*************/
+.footer-items ul{
+    list-style: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+/*************Styling the list items at the footer section (setting text decoration to none, outline to none and text color to white)*************/
+.footer-items ul a {
+    text-decoration: none;
+    outline:none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+/*********************Adding color when move the mouse hover items list at the footer (hovering)************************/
+.footer-items ul a:hover {
+    color: #ff00c8;
+}
+
+/*************Setting the marging and height of the footer items (footer section)***************/
+.footer-items ul li {
+    margin: 10px 0;
+    height: 25px;
+}
+
+/*************Syling the list items inside the navigation bar at the footer section***************/
+.footer-items ul li i {
+    margin-right: 20px;
+}
+
+/*************Seeting width, text color and text alignment to center at social media (Footer section)**************/
+.social-media{
+    width: 100%;
+    color:#fff;
+    text-align:center;
+}
+
+/*************Set Social media property appearance of the decoartive lines on text to none***************/
+.social-media a{
+    text-decoration: none;
+}
+
+/*************Styling the media-socila list items the height, width and marging including the color text to white***************/
+.social-media i {
+    height: 15px;
+    width: 15px;
+    margin: 20px 5px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid rgb(168, 164, 164);
+    transition: 0.3s;
+}
+
+/*************Set footer bottom property: paading, add background color to black, text color to white, center text alignment and set text size to 12px**********/
+.footer-bottom{
+    padding: 35px;
+    background: #0f0f0f;
+    color:whitesmoke;
+    font-size:12px;
+    text-align: center;
+}
+
+/*************Set the text to header 4 and size to 14px at the footer bottom***************/
+.footer-bottom h4{
+    font-size: 14px;
+}
+
+/*************Seeting media to max width 1000px***************/
+@media (max-width:1000px){
+    nav ul{
+        position: absolute;
+        top:50px;
+        left:0;
+        width:100%;
+        margin:0;
+        text-align:center;
+    }
+    .logo{
+        width:100%;
+        text-align: center;
+        margin:0;
+    }
+.footer-items{
+    width: 50%;
+}
+
+.members{
+    max-width: 100%;
+}
+}
+
+/*************Seeting media to max width 700px***************/
+@media only screen and (max-width:700px){
+     nav ul {
+            left:-100%;
+            max-width:200%;
+            text-align: left;
+            transition: 0.5s linear;
+            }
+    
+    nav ul li {
+             display: block;
+             border-bottom: 1px solid whitesmoke;
+            }
+    .drop{
+        width: 100%;
+        position: relative;
+        top:0;
+        left:0;
+    }
+       
+    nav label {
+     display: block;
+    }
+
+    #chk1:checked ~ ul{
+        left: 0;
+    }
+       #chk1:checked ~ nav label .menu{
+        transform: rotate(45deg) translate(-10px, -10px);
+        content: "\f00d";
+    }
+
+      #chk1:checked ~ nav label .menu::before{
+          width: 100%;
+        transform: rotate(-90deg) translate(-8px);
+        content: "\f00d";
+    }
+    .row{
+        text-align: center;
+    }
+    .column, .column-2{
+            width: 100%;
+    }
+
+    .footer-up ul{
+        text-align: center;
+    }
+
+    .footer-up ul li{
+        text-align: center;
+    }
+    .title-img {
+        display: none;
+    }
+
+    .footer-items{
+        width: 100%;
+    }
+
+    .section img{
+    min-height: 20vh;
+     background: no-repeat center;
+    background-size: cover;
+    }
+
+    .section .page-title {
+  display: none;
+}
+
+.members{
+    max-width: 100%;
+}
+.our-team{
+    max-width: 100%
+}
+.team-container{
+    max-width: 100%;
+}
+}
+
+
